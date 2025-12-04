@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Insurance Professionals of Tennessee - Weekend Request Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --ipt-blue: #1c4e71;
+      --ipt-tan: #b7af74;
+      --ipt-soft: #81907a;
+      --ipt-border: #d7dddd;
+      --ipt-bg: #f8f7f2;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--ipt-bg);
+      color: #333;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    header .logo {
+      max-width: 280px;
+      height: auto;
+      display: block;
+      margin: 0 auto 8px;
+    }
+
+    header h1 {
+      margin: 4px 0 2px;
+      font-size: 1.4rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ipt-blue);
+      font-weight: 500;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--ipt-soft);
+      letter-spacing: 0.08em;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 22px 20px 26px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+      border-top: 4px solid var(--ipt-tan);
+    }
+
+    .intro {
+      background: #f3f0e5;
+      border-left: 4px solid var(--ipt-blue);
+      padding: 12px 14px;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .intro strong {
+      color: var(--ipt-blue);
+    }
+
+    fieldset {
+      border: 1px solid var(--ipt-border);
+      border-radius: 8px;
+      padding: 16px 14px 14px;
+      margin-bottom: 18px;
+    }
+
+    legend {
+      padding: 0 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--ipt-blue);
+    }
+
+    .field-group {
+      margin-bottom: 12px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--ipt-border);
+      font-size: 0.95rem;
+      box-sizing: border-box;
+      background-color: #fff;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--ipt-blue);
+      box-shadow: 0 0 0 2px rgba(28, 78, 113, 0.12);
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .request-options label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    .request-options input[type="radio"] {
+      margin-right: 6px;
+      accent-color: var(--ipt-blue);
+    }
+
+    .section {
+      margin-top: 10px;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      color: var(--ipt-blue);
+      font-weight: 600;
+    }
+
+    .section p {
+      font-size: 0.9rem;
+      margin: 4px 0 10px;
+      color: #555;
+    }
+
+    .carrier-list {
+      padding-left: 20px;
+      margin: 6px 0 12px;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    .carrier-list li {
+      margin-bottom: 2px;
+    }
+
+    a {
+      color: var(--ipt-blue);
+    }
+
+    .button-link,
+    button[type="submit"] {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 4px;
+      background: var(--ipt-blue);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    .button-link:hover,
+    button[type="submit"]:hover {
+      background: #153b54;
+    }
+
+    .submit-row {
+      margin-top: 18px;
+    }
+
+    .disclaimer {
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 12px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Replace ipt-logo.png with the actual filename/path of your logo -->
+      <img src="logo.jpg" alt="Insurance Professionals of Tennessee Logo" class="logo" />
+      <h1>Insurance Professionals of Tennessee</h1>
+      <p>Weekend &amp; After-Hours Request Form</p>
+    </header>
+
+    <div class="card">
+      <div class="intro">
+        <strong>Thank you for contacting us!</strong>
+        <p>
+          Our office is currently closed. Please use this page to let us know how we can help, and
+          we will respond within <strong>one business day</strong> (Monday–Friday, 7:00am–5:00pm).
+        </p>
+      </div>
+
+      <!-- Add your form "action" and "method" here when you're ready -->
+      <form id="requestForm">
+        <!-- Contact Info -->
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          <div class="field-group">
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName" name="customerName" required />
+          </div>
+          <div class="field-group">
+            <label for="customerEmail">Email</label>
+            <input type="email" id="customerEmail" name="customerEmail" required />
+          </div>
+          <div class="field-group">
+            <label for="customerPhone">Phone</label>
+            <input type="tel" id="customerPhone" name="customerPhone" />
+          </div>
+        </fieldset>
+
+        <!-- Request Type -->
+        <fieldset class="request-options">
+          <legend>How can we help you?</legend>
+          <label>
+            <input type="radio" name="requestType" value="audit" required />
+            Audit
+          </label>
+          <label>
+            <input type="radio" name="requestType" value="billing" />
+            Billing or Payments
+          </label>
+          <label>
+            <input type="radio" name="requestType" value="certificate" />
+            Certificate Request
+          </label>
+          <label>
+            <input type="radio" name="requestType" value="claim" />
+            Claim
+          </label>
+          <label>
+            <input type="radio" name="requestType" value="newQuote" />
+            New Quote
+          </label>
+          <label>
+            <input type="radio" name="requestType" value="policyChange" />
+            Policy Change
+          </label>
+          <label>
+            <input type="radio" name="requestType" value="other" />
+            Other Question
+          </label>
+        </fieldset>
+
+        <!-- Audit Section -->
+        <div id="auditSection" class="section hidden">
+          <h2>Audit Request</h2>
+          <p>
+            For audit questions during business hours (7:00am–5:00pm, Monday–Friday), you may:
+          </p>
+          <p>
+            Email: <a href="mailto:audits@go-ipt.com">audits@go-ipt.com</a><br />
+            Phone: <strong>(615) 324-0503</strong>
+          </p>
+          <div class="field-group">
+            <label for="auditDetails">Tell us about your audit request (optional)</label>
+            <textarea id="auditDetails" name="auditDetails" rows="4"></textarea>
+          </div>
+        </div>
+
+        <!-- Billing / Payments Section -->
+        <div id="billingSection" class="section hidden">
+          <h2>Billing or Payments</h2>
+          <p>
+            During business hours (7:00am–5:00pm, Monday–Friday), you can call our main office for
+            billing questions:
+          </p>
+          <p>
+            Office: <strong>(615) 324-0500</strong>
+          </p>
+          <p>You may also contact your insurance carrier directly:</p>
+          <ul class="carrier-list">
+            <li>Carrier 1 – (XXX) XXX-XXXX</li>
+            <li>Carrier 2 – (XXX) XXX-XXXX</li>
+            <li>Carrier 3 – (XXX) XXX-XXXX</li>
+            <li>Carrier 4 – (XXX) XXX-XXXX</li>
+            <li>Carrier 5 – (XXX) XXX-XXXX</li>
+            <li>Carrier 6 – (XXX) XXX-XXXX</li>
+            <li>Carrier 7 – (XXX) XXX-XXXX</li>
+            <li>Carrier 8 – (XXX) XXX-XXXX</li>
+            <li>Carrier 9 – (XXX) XXX-XXXX</li>
+            <li>Carrier 10 – (XXX) XXX-XXXX</li>
+          </ul>
+          <div class="field-group">
+            <label for="billingDetails">Tell us about your billing or payment question</label>
+            <textarea id="billingDetails" name="billingDetails" rows="4"></textarea>
+          </div>
+        </div>
+
+        <!-- Certificate Request Section -->
+        <div id="certificateSection" class="secti
